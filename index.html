@@ -228,7 +228,7 @@
                 <div class="bg-white p-5 rounded-[20px] border border-slate-200">
                     <div class="form-grid !mb-3">
                         <div class="input-item"><label>显示名称</label><input type="text" id="new-app-name" placeholder="笔记本"></div>
-                        <div class="input-item"><label>文件名</label><input type="text" id="new-app-url" placeholder="note.html"></div>
+                        <div class="input-item"><label>文件名</label><input type="text" id="new-app-url" placeholder="niknote .html"></div>
                     </div>
                     <div class="input-item mb-4"><label>SVG PATH</label><input type="text" id="new-app-icon" placeholder="M12 3..."></div>
                     <button onclick="addApp()" class="p-3 bg-emerald-600 text-white rounded-xl font-bold w-full text-xs">注入矩阵单元</button>
@@ -314,7 +314,7 @@
                         const data = JSON.parse(localStorage.getItem(k));
                         if (Array.isArray(data)) {
                             data.filter(item => JSON.stringify(item).includes(val)).forEach(m => {
-                                res.push({ type: 'DATA', title: m.title || m.text || '匹配项', url: k.includes('Note') ? 'smart_note.html' : 'calendar.html' });
+                                res.push({ type: 'DATA', title: m.title || m.text || '匹配项', url: k.includes('Note') ? 'niknote .html' : 'calendar.html' });
                             });
                         }
                     } catch(e) {}
